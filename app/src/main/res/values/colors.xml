@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="secondary">#ffC3EDD9</color>
+    <color name="tertiary">#ffF3FFF9</color>
+    <color name="bord">#ffDADADA</color>
+    <color name="baground">#ffF3FFF9</color>
+    <color name="grey">#ff666666</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#ff266342</color>
+    <color name="iconGrey">#ffCACACA</color>
+    <color name="redColor">#FF0000</color>
+    <color name="lightRedColor">#FFF0F0</color>
+    <color name="dotIntroColor">#D9D9D9</color>
+
+
+
+    <color name="purple_200">#0F9D58</color>
+    <color name="purple_500">#0F9D58</color>
+    <color name="purple_700">#0F9D58</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="button_color">#1E573B</color>
+
+</resources>

@@ -1,0 +1,16 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_team_icon"
+        android:icon="@drawable/add_team"
+        app:showAsAction="ifRoom"
+        android:title="TODO" />
+
+    <item
+        android:id="@+id/bell_notification_icon"
+        android:icon="@drawable/bell_icon"
+        app:showAsAction="always"
+        android:title="TODO" />
+</menu>

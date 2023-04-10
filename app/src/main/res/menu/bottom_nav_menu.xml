@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/person"
+        android:icon="@drawable/account_person"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/paymb_button"
+        android:icon="@drawable/paymb_button"
+        android:title="Pay Button" />
+
+    <item
+        android:id="@+id/business_details"
+        android:icon="@drawable/domain_icon"
+        android:title="Business Details"/>
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/ic_wallet"
+        android:title="Wallet" />
+
+
+</menu>

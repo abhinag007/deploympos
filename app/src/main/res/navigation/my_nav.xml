@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/businessDetailsFragment"
+        android:name="com.tech.mpos.BusinessDetailsFragment"
+        android:label="BusinessDetailsFragment" />
+    <fragment
+        android:id="@+id/paymentSetupFragment"
+        android:name="com.tech.mpos.PaymentSetupFragment"
+        android:label="fragment_payment_setup"
+        tools:layout="@layout/fragment_payment_setup" />
+    <fragment
+        android:id="@+id/walletTransactionFragment2"
+        android:name="com.tech.mpos.screens.Transactions.WalletTransactionFragment"
+        android:label="fragment_wallet_transaction"
+        tools:layout="@layout/fragment_wallet_transaction" >
+        <action
+            android:id="@+id/action_walletTransactionFragment2_to_recentTransactionFragment"
+            app:destination="@id/recentTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="FirstFragment"
+        android:label="FirstFragment" >
+        <action
+            android:id="@+id/action_firstFragment_to_paymentSetupFragment"
+            app:destination="@id/paymentSetupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recentTransactionFragment"
+        android:name="com.tech.mpos.TransactionDetailsFragment"
+        android:label="RecentTransactionFragment" />
+
+</navigation>

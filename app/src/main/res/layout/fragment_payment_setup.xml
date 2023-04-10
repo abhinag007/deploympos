@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentSetupFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/initialBackColor_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/name_initial_circle_baground" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nameInitials_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/initialBackColor_iv"
+        app:layout_constraintEnd_toEndOf="@+id/initialBackColor_iv"
+        app:layout_constraintStart_toStartOf="@+id/initialBackColor_iv"
+        app:layout_constraintTop_toTopOf="@+id/initialBackColor_iv"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/businessName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/initialBackColor_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/initialBackColor_iv"
+        app:layout_constraintTop_toTopOf="@+id/initialBackColor_iv" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/enterAmount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter Amount"
+        android:textColor="#F0F1F9"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/initialBackColor_iv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/amount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Amount:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterAmount_tv" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputAmount_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="120dp"
+        app:boxStrokeColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/amount_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/amount_tv"
+        app:layout_constraintTop_toTopOf="@+id/amount_tv"
+        app:layout_constraintVertical_bias="0.425">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/taxPercent_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Tax %:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/amount_tv"
+        app:layout_constraintTop_toBottomOf="@+id/amount_tv"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputTax_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="64dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="120dp"
+        app:boxStrokeColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/taxPercent_tv"
+        app:layout_constraintEnd_toEndOf="@+id/inputAmount_til"
+        app:layout_constraintStart_toStartOf="@+id/inputAmount_til"
+        app:layout_constraintTop_toTopOf="@+id/taxPercent_tv"
+        app:layout_constraintVertical_bias="0.416">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/totalAmount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:text="Total amount to receive: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taxPercent_tv"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/totalAmountUpdate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAD 0.0"
+        android:textSize="18sp"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/totalAmount_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/totalAmount_tv"
+        app:layout_constraintTop_toTopOf="@+id/totalAmount_tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/proceedButton_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border_fill"
+        android:paddingHorizontal="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Proceed"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalAmount_tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
